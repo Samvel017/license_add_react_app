@@ -1,0 +1,130 @@
+.page {
+  padding-top: 50px;
+  max-width: 1270px;
+  margin: 0 auto;
+  .nav {
+    display: flex;
+    grid-gap: 15px;
+    button {
+      background-color: rgb(43, 43, 43);
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      transition: 0.3s all;
+      &:hover {
+        background-color: rgb(70, 70, 70);
+      }
+      &.active {
+        background-color: rgb(70, 70, 70);
+      }
+    }
+  }
+  .main {
+    .systems {
+      margin-top: 30px;
+      .system {
+        margin-bottom: 25px;
+        .css-yw020d-MuiAccordionSummary-expandIconWrapper {
+          color: #fff;
+        }
+        .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+          background-color: rgb(43, 43, 43);
+        }
+        .license_info {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          align-items: center;
+          .license {
+            display: flex;
+            grid-gap: 25px;
+            align-items: center;
+            color: #fff;
+          }
+          .license_buttons {
+            display: flex;
+            align-items: center;
+            grid-gap: 15px;
+            margin-right: 15px;
+            .add_license {
+              padding: 7px 10px;
+              background-color: rgb(62, 62, 255);
+              color: #fff;
+              border: none;
+              border-radius: 7px;
+              cursor: pointer;
+            }
+            .delete_license {
+              padding: 7px 10px;
+              background-color: crimson;
+              color: #fff;
+              border: none;
+              border-radius: 7px;
+              cursor: pointer;
+            }
+          }
+        }
+        .sub_systems {
+          margin-bottom: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #fff;
+          .sub_info {
+            display: flex;
+            grid-gap: 30px;
+          }
+          .delete_button {
+            padding: 7px 10px;
+            background-color: crimson;
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.image_upload_title {
+  color: #fff;
+  margin-bottom: 25px;
+}
+.image_upload {
+  background-color: rgb(43, 43, 43);
+  width: 100%;
+  min-height: 200px;
+  border: 2px dashed rgb(70, 70, 70);
+  text-align: center;
+  padding: 25px 0;
+  .image_upload_btn {
+    padding: 7px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: rgb(62, 62, 255);
+    margin-right: 5px;
+    &.delete_button {
+      background-color: crimson;
+    }
+  }
+  .images {
+    width: 100%;
+    margin-top: 15px;
+    .image-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-gap: 7px;
+    }
+    .carousel {
+      max-width: 1200px;
+      width: 100%;
+    }
+  }
+}

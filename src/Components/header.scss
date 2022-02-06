@@ -1,0 +1,43 @@
+.header {
+  padding-top: 20px;
+  max-width: 1270px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .page_title {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+  }
+  .page_right {
+    display: flex;
+    grid-gap: 20px;
+    align-items: center;
+    .page_status {
+      display: flex;
+      grid-gap: 20px;
+      .status {
+        user-select: none;
+        opacity: 0.3;
+        transition: .3s all;
+        &.active {
+          opacity: 1;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .upgrade_button {
+      button {
+        padding: 7px 10px;
+        background-color: rgb(62, 62, 255);
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+      }
+    }
+  }
+}
